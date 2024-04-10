@@ -162,5 +162,42 @@ li:hover {
     imagem original.*/
     background-position: 50%  10%; /*1° valor significa que o elemento terá sua posição de 
     fundo definida horizontalmente no centro  e o 2° valor verticalmente altura do contêiner.*/
+    border-radius: 7px; /*arredondar  os cantos dos cards*/
+    cursor: pointer; /* colocar mouse em cima da imagem cursor muda*/
+    display: flex;/*utilizando flex para poder utilizar flex-direction e justify-content*/
+    flex-direction: column;/*deixando em coluna*/
+    justify-content: flex-end;/*o texto  vai estar no final da coluna*/
+    color: #ffffff;/*cor do texto*/
+    font-weight: bold;/*deixando o texto em negrito*/
+    font-size: 17px;/*tamanho da fonte do texto*/
+    /*sentido horário*/
+    /*cima - direita - baixo - esquerdo*/
+    padding: 0 0 20px 10px;
+    transition: 1s;/*utilizando a transição para mudar tamanho da imagem no seletor .card:hover*/
+
+}
+
+
+.texto {
+    position: absolute;/*tirando do mesmo fluxo e o texto fica na camada  acima*/
+    margin-bottom: 20px;/*coloca espaçamento embaixo (Externo)*/
+    background-color: rgba(0, 0, 0, 0.6);/*cor de fundo com  opacidade 1°valor red  2°green 3° blue
+    4°alpha que faz o elemento ficar com opcacidade */
+    padding: 20px; /*aumenta o fundo em todos os lados (interno)*/
+    border-radius: 8px;/*arredonda  as bordas*/
+
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex; /*utilizando  flexbox para organizar os elementos
+    para poder utilizar justify-content :center*/
+    justify-content: center; /*deixando os elementos filhos centralizados*/
+    margin-top: 50px;/*espaçamento superior (externo)*/
+    margin-bottom: 30px;/*Espaçamento inferior (externo)*/
+}
+/*aumentando as imagens dos cards  quando o mouse passar por cima*/
+.card:hover {
+    transform: scale(1.03);
 
 }
