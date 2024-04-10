@@ -67,3 +67,100 @@ li:hover {
    
 
 }
+
+/* -----------------Começando a seção do trailer ----------------*/
+.trailer {
+    width: 50%;
+}
+
+#trailer-container{
+    width: 100%;/*Largura*/
+    height: 400px;/*altura*/
+    display: flex;/*serve para colocar os elemento lado a lado 
+    mas nesse momento utilizado para alinhar o itens com justify-content*/
+    justify-content: center;/*alinhar os elementos ao centro*/
+}
+
+.content {
+    width: 60%;/*deixando o nosso container com total de 60%*/
+    display: flex;/*colocando os elementos lado a lado*/
+    align-items: center;/*ajusta verticalmente*/
+    justify-content: space-between;/*espaçamento entre os elementos*/
+}
+
+
+#sinopse {
+    width: 50%;
+    display: flex;/*nesse caso estamos utilizando para adicionar o
+     flex-direction*/
+    flex-direction: column; /*colocando os elementos em coluna um 
+    embaixo do outro*/
+    justify-content: space-between;/*espaçamento entre os elementos*/
+    margin-left: 30px;/*colocando um espaçamento  da esquerda*/
+}
+
+.description {
+    color: #ffffff ;/*cor da font (texto)*/
+    font-size: 18px;/*tamanho font (texto)*/
+    width: 70%;/*largura*/
+}
+
+.button{
+    width: 200px;/*largura do botão*/
+    height: 60px;/*altura do botão*/
+    background-color: #d21617;/*cor do fundo*/
+    color: #ffffff;/*cor do texto*/
+    font-size: 18px;/*tamanho do texto*/
+    font-weight: bold;/*fazendo com que o texto dentro
+     desses elementos seja exibido em negrito.*/
+    padding: 8px 10px;/*espaçamento interno cima e baixo,
+     direita e esquerda */
+     border: none;/*tirando as bordas*/
+     border-radius: 7px;/*arredondando as bordas*/
+     cursor: pointer;/*mudando o ponteiro do mouse quando passa por cima*/
+     display: flex;
+     justify-content: center;/*alinhando  o texto ao centro na horizontal*/
+    align-items: center;/*alinhando  o texto ao centro na vertical*/
+    margin-top: 25px;/*espaçamento  superior entre o texto e o botão*/
+    outline: none;/*tirando um linha de contorno do botão*/
+    transition: .8s;/*efeito de mudança*/
+
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+}
+.banner-1 {
+    background-image: url("https://rollingstone.uol.com.br/media/uploads/robert_pattinson_como_batman_foto_divulgacao_warner.jpg");
+}
+
+.banner-2 {
+    background-image: url("https://rollingstone.uol.com.br/media/uploads/zoe_kravitz_divulgacao.jpg");
+}
+
+.banner-3 {
+    background-image: url("https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q95/wp-content/uploads/2022/02/legiao_PaigXTfI73yn.png.webp");
+}
+
+.cards-content {
+    width: 90%;/*largura*/
+    display: grid;/*utilizado  para criar a coluna*/
+    grid-template-columns: repeat(3, 1fr);/*cria 3 colunas com mesmo espaçamento*/
+    column-gap: 40px;/*espaçamento entre as colunas*/
+
+}
+
+.card {
+    background-size: cover;/*imagem de fundo da div seja dimensionada para
+    cobrir toda a área da div, independentemente das dimensões da 
+    imagem original.*/
+    background-position: 50%  10%; /*1° valor significa que o elemento terá sua posição de 
+    fundo definida horizontalmente no centro  e o 2° valor verticalmente altura do contêiner.*/
+
+}
